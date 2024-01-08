@@ -5,8 +5,9 @@
   box-sizing: border-box;
 }
 body{
-  margin: 460px;
+  margin: 0 auto;
   margin-top: 80px;
+  max-width: 1200px;
 }
 .header{
   display: flex;
@@ -26,9 +27,9 @@ body{
   margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 32px;
-  grid-row-gap: 0px;
+  grid-row-gap: 32px;
   justify-items: stretch;
 }
 
@@ -42,9 +43,31 @@ body{
   height: 100%;
   object-fit: cover; /* Zapewnia, że obrazek wypełni całe dostępne miejsce zachowując proporcje */
 }
-.item2 p{
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
+.item3 {
+  grid-column: span 4; /* Zajmowanie 2 kolumn */
+  grid-row: span 1;
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+  font-size: 45px;
+  padding-right: 120px;
+}
+.item2{
+  grid-column: span 4; /* Zajmowanie 2 kolumn */
+  grid-row: span 3;
+  background-color: hsl(240, 100%, 5%);
+}
+.item4{
+  grid-column: span 4; /* Zajmowanie 2 kolumn */
+  grid-row: span 1;
+}
+.readMoreButton{
+  margin-top: auto;
+  height: 45px;
+  width: 200px;
+  color: white;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  font-size: 13px;
+  letter-spacing: 5px;
+  font-weight: 700;
 }
