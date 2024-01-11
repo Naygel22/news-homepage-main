@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News homepage</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News homepage</title>
+    <link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header class="header">
+        <img src="assets/images/logo.svg" alt="logo">
+        <nav class="navBar">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+        </nav>
+    </header>
 
-  <header class="header">
+    <div class="main-grid-container">
+        <div class="grid-container1">
+            <div class="item1">
+                <img src="assets/images/image-web-3-desktop.jpg" alt="image-web-3-desktop">
+            </div>
 
-    <img src="assets/images/logo.svg" alt="logo">
+            <div class="item3">
+                <p>The Bright Future of Web 3.0?</p>
+            </div>
 
-    <nav class="navBar">
-      <a href="#">Home</a>
-      <a href="#">New</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categories</a>
-    </nav>
-  </header>
+            <div class="item4">
+                <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+                    of the people. But is it really fulfilling its promise?</p>
+                <button class="readMoreButton">READ MORE</button>
+            </div>
+        </div>
 
-  <div class="grid-container">
-    <div class="item1">
-      <img src="assets/images/image-web-3-desktop.jpg" alt="image-web-3-desktop">
+        <div class="grid-container2">
+            <div class="item2">
+                <h1 class="newText">New</h1>
+                <h2 class="title">Hydrogen VS Electric Cars</h2>
+                <p class="titleText">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+
+            <div class="item2">
+                <h2 class="title">The Downsides of AI Artistry</h2>
+                <p class="titleText">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+
+            <div class="item2">
+                <h2 class="title">Is VC Funding Drying Up?</h2>
+                <p class="titleText">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+        </div>
+
+        <div class="grid-container3">
+            <div class="item5">
+                <div><img src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs" class="articleImg"></div>
+                <div class="text-container">
+                    <div class="articleNumber">01</div>
+                    <div class="articleTitle">Reviving Retro PCs</div>
+                    <div class="articleText">What happens when old PCs are given modern upgrades?</div>
+                </div>
+            </div>
+
+            <div class="item6">
+                <div><img src="assets/images/image-top-laptops.jpg" alt="image-retro-pcs" class="articleImg"></div>
+                <div class="text-container">
+                    <div class="articleNumber">02</div>
+                    <div class="articleTitle">Top 10 Laptops of 2022</div>
+                    <div class="articleText">Our best picks for various needs and budget.</div>
+                </div>
+                
+            </div>
+
+            <div class="item7">
+                <div><img src="assets/images/image-gaming-growth.jpg" alt="image-retro-pcs" class="articleImg"></div>
+                <div class="text-container">
+                    <div class="articleNumber">03</div>
+                    <div class="articleTitle">The Growth of Gaming</div>
+                    <div class="articleText">How the pandemic has sparked fresh opportunities.</div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="item2">
-      <h1 class="newText">New</h1>
-    </div>
-
-    <div class="item3">
-      <p>The Bright Future of Web 3.0?</p>
-    </div>
-
-    <div class="item4">
-      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-        But is it really fulfilling its promise?</p>
-      <button class="readMoreButton">READ MORE</button>
-    </div>
-
-  </div>
-  
-
-
-
 </body>
+
 </html>
